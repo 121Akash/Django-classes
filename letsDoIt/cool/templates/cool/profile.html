@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swag Me</title>
+    <link rel="stylesheet" href="{% static 'cool/css/new-profile.css'%}">
+    <link rel="stylesheet" href="{% static 'cool/css/common.css'%}">
+   
+</head>
+<body>
+    <div class="img" id="image-box">
+        <img src="/static/cool/Images/common.jpg" alt="">
+    </div>
+    <p id="para"></p>
+    <button onclick="animate_img()">
+        hello
+    </button>
+    <button onclick="showText()">
+        Hey
+    </button>
+
+    
+    <script src="{% static 'cool/script/common.js' %}"></script>
+    <script src="{% static 'cool/script/new-profile.js' %}"></script>
+</body>
+</html>

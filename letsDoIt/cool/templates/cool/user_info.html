@@ -1,0 +1,20 @@
+{% load custom_filters %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Info</title>
+</head>
+<body>
+
+    <h1>user name start & end  with</h1>
+    <p>original Name: {{name}}</p>
+    <p> user name statrt with : "{{ name|nameStarted }}"</p>
+   
+
+
+    <h2>user age </h2>
+    <p>age: {{age}}</p>
+    <p>is greater than: {{ age|reverse_age}}</p>
+</body>
+</html>
